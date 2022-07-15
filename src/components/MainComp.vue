@@ -10,7 +10,12 @@
       
       <!-- Provides the application the proper gutter -->
       <v-container fluid>
-      
+        <ImagesComp/>
+        <WeatherComp/>
+        <MusicComp/>
+        <TableComp/>
+        <SettingComp/>
+        <BannersComp/>
         <!-- If using vue-router -->
         <router-view></router-view>
       </v-container>
@@ -26,12 +31,24 @@
 <script>
 import TopComp from '@/components/TopComp.vue'
 import BottomComp from '@/components/BottomComp.vue'
+import ImagesComp from '@/components/ImagesComp.vue'
+import WeatherComp from '@/components/WeatherComp.vue'
+import MusicComp from '@/components/MusicComp.vue'
+import TableComp from '@/components/TableComp.vue'
+import SettingComp from '@/components/SettingComp.vue'
+import BannersComp from '@/components/BannersComp.vue'
 
 export default {
   name: 'CenterComp',
   components:{
     TopComp,
-    BottomComp
+    BottomComp,
+    ImagesComp,
+    WeatherComp,
+    MusicComp,
+    TableComp,
+    SettingComp,
+    BannersComp,
   }
   
 }
