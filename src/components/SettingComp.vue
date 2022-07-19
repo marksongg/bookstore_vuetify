@@ -103,9 +103,7 @@ export default {
   }
 
   #box {
-    margin-left: -250px;
-    margin-top: -320px;
-    float: left;
+    float: right;
   }
 
 </style>

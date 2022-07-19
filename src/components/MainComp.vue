@@ -9,16 +9,71 @@
     <v-main>
       
       <!-- Provides the application the proper gutter -->
-      <v-container fluid>
-        <ImagesComp/>
-        <WeatherComp/>
-        <MusicComp/>
-        <TableComp/>
-        <SettingComp/>
-        <BannersComp/>
-        <!-- If using vue-router -->
-        <router-view></router-view>
-      </v-container>
+      <div id="gridLayout">
+        <v-container fluid>
+          <!-- <v-container class="bg-surface-variant"> --> 
+          <v-container>
+            <v-row no-gutters>
+              <v-col>
+                <v-sheet class="pa-2 ma-2">
+                  <!-- .v-col-auto -->
+                  <ChipsComp/>
+                </v-sheet>
+              </v-col>
+              <v-col>
+                <v-sheet class="pa-2 ma-2">
+                  <!-- .v-col-auto -->
+                  <BannersComp/>
+                </v-sheet>
+              </v-col>
+              <v-col>
+                <v-sheet class="pa-2 ma-2">
+                  <!-- .v-col-auto -->
+                  <TableComp/>
+                </v-sheet>
+              </v-col>
+            </v-row>
+
+            <v-row no-gutters>
+              <v-col>
+                <v-sheet class="pa-2 ma-2">
+                  <!-- .v-col-auto -->
+                  <SettingComp/>
+                </v-sheet>
+              </v-col>
+              <v-col>
+                <v-sheet class="pa-2 ma-2">
+                  <!-- .v-col-auto -->
+                  <ImagesComp/>
+                </v-sheet>
+              </v-col>
+              <v-col>
+                <v-sheet class="pa-2 ma-2">
+                  <!-- .v-col-auto -->
+                  <MusicComp/>
+                </v-sheet>
+              </v-col>
+            </v-row>
+
+            <v-row no-gutters>
+              <v-col cols="2">  <!-- ★占用2列  -->
+                <v-sheet class="pa-2 ma-2">
+                  <WeatherComp/>
+                </v-sheet>
+              </v-col>
+              <v-col>
+                <v-sheet class="pa-2 ma-2">
+                  <!-- .v-col-auto -->
+                  TODO
+                </v-sheet>
+              </v-col>
+            </v-row>
+          </v-container>
+          
+          <!-- If using vue-router -->
+          <router-view></router-view>
+        </v-container>
+      </div>
     </v-main>
 
     <v-footer app>
@@ -37,9 +92,10 @@ import MusicComp from '@/components/MusicComp.vue'
 import TableComp from '@/components/TableComp.vue'
 import SettingComp from '@/components/SettingComp.vue'
 import BannersComp from '@/components/BannersComp.vue'
+import ChipsComp from '@/components/ChipsComp.vue'
 
 export default {
-  name: 'CenterComp',
+  name: 'MainComp',
   components:{
     TopComp,
     BottomComp,
@@ -49,6 +105,7 @@ export default {
     TableComp,
     SettingComp,
     BannersComp,
+    ChipsComp,
   }
   
 }
@@ -56,8 +113,13 @@ export default {
 
 <style scoped>
   * {
-    margin: 0px;
     padding: 0px;
+  }
+
+  #gridLayout {
+    margin-top: 10px;
+    margin-left: -300px;
+    margin-right: 0px;
   }
 
   
