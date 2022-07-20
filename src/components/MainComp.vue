@@ -64,11 +64,20 @@
               <v-col>
                 <v-sheet class="pa-2 ma-2">
                   <!-- .v-col-auto -->
-                  TODO
+                  TOOD
                 </v-sheet>
               </v-col>
             </v-row>
           </v-container>
+
+          <v-row no-gutters>
+              <v-col cols="12">
+                <v-sheet class="pa-2 ma-2">
+                  <!-- .v-col-auto -->
+                  <FormInputComp/>
+                </v-sheet>
+              </v-col>
+            </v-row>
           
           <!-- If using vue-router -->
           <router-view></router-view>
@@ -93,6 +102,7 @@ import TableComp from '@/components/TableComp.vue'
 import SettingComp from '@/components/SettingComp.vue'
 import BannersComp from '@/components/BannersComp.vue'
 import ChipsComp from '@/components/ChipsComp.vue'
+import FormInputComp from '@/components/FormInputComp.vue'
 
 export default {
   name: 'MainComp',
@@ -106,6 +116,7 @@ export default {
     SettingComp,
     BannersComp,
     ChipsComp,
+    FormInputComp
   }
   
 }
