@@ -56,7 +56,7 @@
             </v-row>
 
             <v-row no-gutters>
-              <v-col cols="2">  <!-- ★占用2列  -->
+              <v-col>  <!-- ★占用2列  -->
                 <v-sheet class="pa-2 ma-2">
                   <WeatherComp/>
                 </v-sheet>
@@ -64,13 +64,23 @@
               <v-col>
                 <v-sheet class="pa-2 ma-2">
                   <!-- .v-col-auto -->
-                  TOOD
+                  <ColorPickerComp/>
+                </v-sheet>
+              </v-col>
+              <v-col>
+                <v-sheet class="pa-2 ma-2">
+                  <!-- .v-col-auto -->
+                  <TransitionComp/>
+                </v-sheet>
+              </v-col>
+              <v-col>
+                <v-sheet class="pa-2 ma-2">
+                  <ButtonComp/>
                 </v-sheet>
               </v-col>
             </v-row>
-          </v-container>
 
-          <v-row no-gutters>
+            <v-row no-gutters>
               <v-col cols="12">
                 <v-sheet class="pa-2 ma-2">
                   <!-- .v-col-auto -->
@@ -78,6 +88,9 @@
                 </v-sheet>
               </v-col>
             </v-row>
+          </v-container>
+
+          
           
           <!-- If using vue-router -->
           <router-view></router-view>
@@ -93,16 +106,19 @@
 </template>
 
 <script>
-import TopComp from '@/components/TopComp.vue'
-import BottomComp from '@/components/BottomComp.vue'
-import ImagesComp from '@/components/ImagesComp.vue'
-import WeatherComp from '@/components/WeatherComp.vue'
-import MusicComp from '@/components/MusicComp.vue'
-import TableComp from '@/components/TableComp.vue'
-import SettingComp from '@/components/SettingComp.vue'
-import BannersComp from '@/components/BannersComp.vue'
-import ChipsComp from '@/components/ChipsComp.vue'
-import FormInputComp from '@/components/FormInputComp.vue'
+import TopComp from '@/components/TopComp.vue';
+import BottomComp from '@/components/BottomComp.vue';
+import ImagesComp from '@/components/ImagesComp.vue';
+import WeatherComp from '@/components/WeatherComp.vue';
+import MusicComp from '@/components/MusicComp.vue';
+import TableComp from '@/components/TableComp.vue';
+import SettingComp from '@/components/SettingComp.vue';
+import BannersComp from '@/components/BannersComp.vue';
+import ChipsComp from '@/components/ChipsComp.vue';
+import FormInputComp from '@/components/FormInputComp.vue';
+import ColorPickerComp from '@/components/ColorPickerComp.vue';
+import TransitionComp from '@/components/TransitionComp.vue';
+import ButtonComp from '@/components/ButtonComp.vue'
 
 export default {
   name: 'MainComp',
@@ -116,7 +132,10 @@ export default {
     SettingComp,
     BannersComp,
     ChipsComp,
-    FormInputComp
+    FormInputComp,
+    ColorPickerComp,
+    TransitionComp,
+    ButtonComp
   }
   
 }
