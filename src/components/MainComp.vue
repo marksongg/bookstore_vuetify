@@ -84,10 +84,25 @@
               <v-col cols="12">
                 <v-sheet class="pa-2 ma-2">
                   <!-- .v-col-auto -->
+                  <TimelineComp/>
+                </v-sheet>
+              </v-col>
+            </v-row>
+
+            <v-row no-gutters>
+              <v-col cols="4">
+                <v-sheet class="pa-2 ma-2">
+                  <TimelineComp2/>
+                </v-sheet>
+              </v-col>
+              <v-col cols="8">
+                <v-sheet class="pa-2 ma-2">
                   <FormInputComp/>
                 </v-sheet>
               </v-col>
             </v-row>
+
+            
           </v-container>
 
           
@@ -118,7 +133,9 @@ import ChipsComp from '@/components/ChipsComp.vue';
 import FormInputComp from '@/components/FormInputComp.vue';
 import ColorPickerComp from '@/components/ColorPickerComp.vue';
 import TransitionComp from '@/components/TransitionComp.vue';
-import ButtonComp from '@/components/ButtonComp.vue'
+import ButtonComp from '@/components/ButtonComp.vue';
+import TimelineComp from '@/components/TimelineComp.vue';
+import TimelineComp2 from '@/components/TimelineComp2.vue';
 
 export default {
   name: 'MainComp',
@@ -135,7 +152,9 @@ export default {
     FormInputComp,
     ColorPickerComp,
     TransitionComp,
-    ButtonComp
+    ButtonComp,
+    TimelineComp,
+    TimelineComp2
   }
   
 }
