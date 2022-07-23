@@ -57,7 +57,7 @@
           text-color="white"
           append-icon="mdi-cloud"
         >
-          汽车贩卖，广告，电力ERP，银行，保险，电信等相关业务经验
+          了解汽车贩卖，广告，电力ERP，银行，保险，电信等相关业务经验
         </v-chip>
 
         <v-chip

@@ -6,6 +6,16 @@
       max-width="600"
       v-bind="props"
     >
+      <v-toolbar
+          color="primary"
+          theme="dark"
+      >
+        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+        <v-toolbar-title>Transition组件</v-toolbar-title>
+
+        <v-spacer></v-spacer>
+      </v-toolbar>
       <v-img
         :aspect-ratio="16/9"
         cover

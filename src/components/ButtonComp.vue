@@ -1,6 +1,16 @@
 <template>
-  <div class="text-center">
-    <div>
+  <v-card>
+    <v-toolbar
+          color="warning"
+          theme="dark"
+    >
+        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+        <v-toolbar-title>Button组件</v-toolbar-title>
+
+        <v-spacer></v-spacer>
+    </v-toolbar>
+    <div class="box">
       <v-btn
         class="ma-2"
         color="primary"
@@ -32,9 +42,7 @@
         ></v-icon>
         Cancel
       </v-btn>
-    </div>
 
-    <div>
       <v-btn
         class="ma-2"
         color="orange-darken-2"
@@ -45,7 +53,9 @@
         ></v-icon>
         Back
       </v-btn>
+    </div>
 
+    <div class="box">
       <v-btn
         class="ma-2"
         color="purple"
@@ -57,9 +67,7 @@
         color="indigo"
         icon="mdi-cloud-upload"
       ></v-btn>
-    </div>
 
-    <div>
       <v-btn
         class="ma-2"
         variant="text"
@@ -74,7 +82,7 @@
         color="red-lighten-2"
       ></v-btn>
     </div>
-  </div>
+  </v-card>
 </template>
 
 <script>
@@ -87,5 +95,7 @@ export default {
 </script>
 
 <style>
-
+  .box {
+    float: left;
+  }
 </style>

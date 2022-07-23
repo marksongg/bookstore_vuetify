@@ -1,21 +1,35 @@
 <template>
-  <v-timeline side="end">
-    <v-timeline-item
-      v-for="item in items"
-      :key="item.id"
-      :dot-color="item.color"
-      size="small"
+  <v-card id="tlcard">
+    <v-toolbar
+          color="secondary"
+          theme="dark"
     >
-      <v-alert
-        :value="true"
-        :color="item.color"
-        :icon="item.icon"
-        class="white--text"
-      >
-        {{item.msg}}
-      </v-alert>
-    </v-timeline-item>
-  </v-timeline>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+      <v-toolbar-title>Timeline组件</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+    </v-toolbar>
+    <div id="box">
+      <v-timeline side="end">
+        <v-timeline-item
+          v-for="item in items"
+          :key="item.id"
+          :dot-color="item.color"
+          size="small"
+        >
+          <v-alert
+            :value="true"
+            :color="item.color"
+            :icon="item.icon"
+            class="white--text"
+          >
+            {{item.msg}}
+          </v-alert>
+        </v-timeline-item>
+      </v-timeline>
+    </div>
+  </v-card>
 </template>
 
 <script>
@@ -71,5 +85,11 @@
 </script>
 
 <style scoped>
+  .tlcard {
+    padding: 100px;
+  }
 
+  #box {
+    margin: 10px 10px 10px 10px;
+  }
 </style>

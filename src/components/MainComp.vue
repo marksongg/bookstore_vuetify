@@ -56,7 +56,7 @@
             </v-row>
 
             <v-row no-gutters>
-              <v-col>  <!-- ★占用2列  -->
+              <v-col cols="4">  <!-- ★占用2列  -->
                 <v-sheet class="pa-2 ma-2">
                   <WeatherComp/>
                 </v-sheet>
@@ -71,11 +71,6 @@
                 <v-sheet class="pa-2 ma-2">
                   <!-- .v-col-auto -->
                   <TransitionComp/>
-                </v-sheet>
-              </v-col>
-              <v-col>
-                <v-sheet class="pa-2 ma-2">
-                  <ButtonComp/>
                 </v-sheet>
               </v-col>
             </v-row>
@@ -95,14 +90,21 @@
                   <TimelineComp2/>
                 </v-sheet>
               </v-col>
-              <v-col cols="8">
+
+              <v-col>
                 <v-sheet class="pa-2 ma-2">
                   <FormInputComp/>
                 </v-sheet>
               </v-col>
             </v-row>
 
-            
+            <v-row>
+              <v-col cols="4">
+                <v-sheet class="pa-2 ma-2">
+                  <ButtonComp/>
+                </v-sheet>
+              </v-col>
+            </v-row>
           </v-container>
 
           

@@ -1,68 +1,80 @@
 <template>
   <div id="body1">
-    <div id="box">
-      <v-form
-        ref="form"
-        v-model="valid"
-        lazy-validation
+    <v-card>
+      <v-toolbar
+          color="warning"
+          theme="dark"
       >
-        <v-text-field
-          v-model="name"
-          :counter="10"
-          :rules="nameRules"
-          label="Name"
-          required
-        ></v-text-field>
+        <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-        <v-text-field
-          v-model="email"
-          :rules="emailRules"
-          label="E-mail"
-          required
-        ></v-text-field>
+        <v-toolbar-title>FormInput组件</v-toolbar-title>
 
-        <v-select
-          v-model="select"
-          :items="items"
-          :rules="[v => !!v || 'Sex is required']"
-          label="Sex"
-          required
-        ></v-select>
+        <v-spacer></v-spacer>
+      </v-toolbar>
+      <div id="box">
+        <v-form
+          ref="form"
+          v-model="valid"
+          lazy-validation
+        >
+          <v-text-field
+            v-model="name"
+            :counter="10"
+            :rules="nameRules"
+            label="Name"
+            required
+          ></v-text-field>
 
-        <v-checkbox
-          v-model="checkbox"
-          :rules="[v => !!v || 'You must agree to continue!']"
-          label="Do you agree?"
-          required
-        ></v-checkbox>
+          <v-text-field
+            v-model="email"
+            :rules="emailRules"
+            label="E-mail"
+            required
+          ></v-text-field>
 
-        <div id="btnLayout">
-          <v-btn
-            :disabled="!valid"
-            color="success"
-            class="mr-4"
-            @click="validate"
-          >
-            Validate
-          </v-btn>
+          <v-select
+            v-model="select"
+            :items="items"
+            :rules="[v => !!v || 'Sex is required']"
+            label="Sex"
+            required
+          ></v-select>
 
-          <v-btn
-            color="error"
-            class="mr-4"
-            @click="reset"
-          >
-            Reset Form
-          </v-btn>
+          <v-checkbox
+            v-model="checkbox"
+            :rules="[v => !!v || 'You must agree to continue!']"
+            label="Do you agree?"
+            required
+          ></v-checkbox>
 
-          <v-btn
-            color="warning"
-            @click="resetValidation"
-          >
-            Reset Validation
-          </v-btn>
-        </div>
-      </v-form>
-    </div>
+          <div id="btnLayout">
+            <v-btn
+              :disabled="!valid"
+              color="success"
+              class="mr-4"
+              @click="validate"
+            >
+              Validate
+            </v-btn>
+
+            <v-btn
+              color="error"
+              class="mr-4"
+              @click="reset"
+            >
+              Reset Form
+            </v-btn>
+
+            <v-btn
+              color="warning"
+              @click="resetValidation"
+            >
+              Reset Validation
+            </v-btn>
+          </div>
+        </v-form>
+      </div>
+    </v-card>
   </div>
 </template>
 
@@ -105,8 +117,7 @@
 
 <style scoped>
   #box {
-    margin-left: 120px;
-    margin-right: 120px;
+    margin:20px 20px 60px 20px;
   }
 
   #btnLayout button {
