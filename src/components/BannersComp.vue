@@ -1,6 +1,16 @@
 <template>
   <div id="body1">
-    <div id="box">
+    <v-card>
+       <v-toolbar
+          color="cyan"
+          dark
+        >
+          <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+          <v-toolbar-title>Banners组件</v-toolbar-title>
+
+          <v-spacer></v-spacer>
+       </v-toolbar>
        <v-banner
           lines="one"
           icon="mdi-lock"
@@ -45,7 +55,7 @@
             <v-btn>Action</v-btn>
           </template>
         </v-banner>
-    </div>
+    </v-card>
   </div>
 </template>
 

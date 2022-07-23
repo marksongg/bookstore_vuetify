@@ -1,6 +1,16 @@
 <template>
   <div id="body1">
-    <div id="box">
+    <v-card>
+      <v-toolbar
+          color="purple"
+          dark
+        >
+          <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+          <v-toolbar-title>Table组件</v-toolbar-title>
+
+          <v-spacer></v-spacer>
+      </v-toolbar>
       <v-table
         fixed-header
         height="300px"
@@ -25,7 +35,7 @@
           </tr>
         </tbody>
       </v-table>
-    </div>
+    </v-card>
   </div>
 </template>
 

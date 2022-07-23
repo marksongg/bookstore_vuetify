@@ -11,7 +11,7 @@
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Discover</v-toolbar-title>
+      <v-toolbar-title>Images组件</v-toolbar-title>
 
       <v-spacer></v-spacer>
 

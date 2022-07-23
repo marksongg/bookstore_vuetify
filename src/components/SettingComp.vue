@@ -6,16 +6,14 @@
         max-width="400"
       >
         <v-toolbar
-          color="purple"
+          color="red"
           dark
         >
           <v-app-bar-nav-icon variant="text"></v-app-bar-nav-icon>
 
-          <v-toolbar-title>Settings</v-toolbar-title>
+          <v-toolbar-title>Settings组件</v-toolbar-title>
 
           <v-spacer></v-spacer>
-
-          <v-btn variant="text" icon="mdi-magnify"></v-btn>
         </v-toolbar>
 
         <v-list lines="three">

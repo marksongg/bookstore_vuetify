@@ -1,6 +1,20 @@
 <template>
   <div id="body1">
-     <div class="text-center">
+      <v-card>
+        <v-toolbar
+          color="deep-purple accent-4"
+          theme="dark"
+        >
+          <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+          <v-toolbar-title>自我介绍 (Chips组件)</v-toolbar-title>
+
+          <v-spacer></v-spacer>
+
+          <!-- <v-btn icon>
+            <v-icon>mdi-magnify</v-icon>
+          </v-btn> -->
+        </v-toolbar>
         <v-chip
           class="ma-2"
           color="indigo"
@@ -35,6 +49,15 @@
           append-icon="mdi-car"
         >
           最近恶补前端技术，持续冲电中。
+        </v-chip>
+
+        <v-chip
+          class="ma-2"
+          color="warning"
+          text-color="white"
+          append-icon="mdi-cloud"
+        >
+          汽车贩卖，广告，电力ERP，银行，保险，电信等相关业务经验
         </v-chip>
 
         <v-chip
@@ -109,7 +132,7 @@
         >
           Click me can delete!
         </v-chip>
-      </div>
+      </v-card>
   </div>
 </template>
 
@@ -126,13 +149,13 @@ export default {
         'Oracle','MS Server', 'MySql','Elastic Search','Cassandora'
       ],
       frameworks: [
-        'vue 3.0', 'Spring boot'
+        'Vue', 'Angular','Spring boot'
       ],
       devTools: [
-        'Eclipse', 'VS code', 'Visual Studio', 'JetBrains'
+        'Eclipse', 'STS', 'VS code', 'Visual Studio', 'JetBrains'
       ],
       plugInComponents: [
-        'Vuetify', 'ActiveReport'
+        'Vuetify', 'Bootstrap', 'ActiveReport'
       ]
     }
   },
