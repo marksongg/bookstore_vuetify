@@ -2,11 +2,11 @@
   <div class="box">
     <v-card>
       <v-toolbar
-            color="warning"
+            color="pink"
             theme="dark"
       >
           <v-app-bar-nav-icon></v-app-bar-nav-icon>
-          <v-toolbar-title>Alert组件</v-toolbar-title>
+          <v-toolbar-title>Alert3组件</v-toolbar-title>
           <v-spacer></v-spacer>
       </v-toolbar>
       <div class="alertCard">

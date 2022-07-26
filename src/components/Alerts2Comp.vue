@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-toolbar
-          color="warning"
+          color="secondary"
           theme="dark"
     >
         <v-app-bar-nav-icon></v-app-bar-nav-icon>

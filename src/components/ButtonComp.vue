@@ -1,13 +1,10 @@
 <template>
   <v-card>
     <v-toolbar
-          color="warning"
-          theme="dark"
-    >
+          color="primary"
+          theme="dark">
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
         <v-toolbar-title>Button组件</v-toolbar-title>
-
         <v-spacer></v-spacer>
     </v-toolbar>
     <div class="box">

@@ -106,6 +106,24 @@
               </v-col>
               <v-col cols="4">
                 <v-sheet class="pa-2 ma-2">
+                  <ButtonComp2/>
+                </v-sheet>
+              </v-col>
+              <v-col cols="4">
+                <v-sheet class="pa-2 ma-2">
+                  <ButtonComp3/>
+                </v-sheet>
+              </v-col>
+            </v-row>
+
+            <v-row>
+              <v-col cols="4">
+                <v-sheet class="pa-2 ma-2">
+                  <BreadcrumbsComp/>
+                </v-sheet>
+              </v-col>
+              <v-col cols="4">
+                <v-sheet class="pa-2 ma-2">
                   <AlertsComp/>
                 </v-sheet>
               </v-col>
@@ -115,17 +133,15 @@
                 </v-sheet>
               </v-col>
             </v-row>
+
+            <v-row>
+                <v-col cols="10">
+                  <v-sheet class="pa-2 ma-2">
+                    <Alerts3Comp/>
+                  </v-sheet>
+                </v-col>
+            </v-row>
           </v-container>
-
-          <v-row>
-              <v-col cols="10">
-                <v-sheet class="pa-2 ma-2">
-                  <Alerts3Comp/>
-                </v-sheet>
-              </v-col>
-          </v-row>
-
-          
           
           <!-- If using vue-router -->
           <router-view></router-view>
@@ -154,11 +170,14 @@ import FormInputComp from '@/components/FormInputComp.vue';
 import ColorPickerComp from '@/components/ColorPickerComp.vue';
 import TransitionComp from '@/components/TransitionComp.vue';
 import ButtonComp from '@/components/ButtonComp.vue';
+import ButtonComp2 from '@/components/ButtonComp2.vue';
+import ButtonComp3 from '@/components/ButtonComp3.vue';
 import TimelineComp from '@/components/TimelineComp.vue';
 import TimelineComp2 from '@/components/TimelineComp2.vue';
 import AlertsComp  from '@/components/AlertsComp.vue';
 import Alerts2Comp from '@/components/Alerts2Comp.vue';
 import Alerts3Comp from '@/components/Alerts3Comp.vue';
+import BreadcrumbsComp from '@/components/BreadcrumbsComp.vue';
 
 export default {
   name: 'MainComp',
@@ -176,11 +195,14 @@ export default {
     ColorPickerComp,
     TransitionComp,
     ButtonComp,
+    ButtonComp2,
+    ButtonComp3,
     TimelineComp,
     TimelineComp2,
     AlertsComp,
     Alerts2Comp,
-    Alerts3Comp
+    Alerts3Comp,
+    BreadcrumbsComp
   }
   
 }
