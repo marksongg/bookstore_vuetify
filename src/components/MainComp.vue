@@ -141,6 +141,29 @@
                   </v-sheet>
                 </v-col>
             </v-row>
+
+            <v-row>
+              <v-col cols="4">
+                <v-sheet class="pa-2 ma-2">
+                  <ChipsComp2/>
+                </v-sheet>
+              </v-col>
+              <v-col cols="8">
+                <v-sheet class="pa-2 ma-2">
+                  <DividersComp/>
+                </v-sheet>
+              </v-col>
+            </v-row>
+
+            <v-row>
+              <v-col cols="12">
+                <v-sheet class="pa-2 ma-2">
+                  <ExpansionPanelsComp/>
+                </v-sheet>
+              </v-col>
+            </v-row>
+
+
           </v-container>
           
           <!-- If using vue-router -->
@@ -178,6 +201,9 @@ import AlertsComp  from '@/components/AlertsComp.vue';
 import Alerts2Comp from '@/components/Alerts2Comp.vue';
 import Alerts3Comp from '@/components/Alerts3Comp.vue';
 import BreadcrumbsComp from '@/components/BreadcrumbsComp.vue';
+import ChipsComp2 from '@/components/ChipsComp2.vue';
+import DividersComp from '@/components/DividersComp.vue';
+import ExpansionPanelsComp from '@/components/ExpansionPanelsComp.vue';
 
 export default {
   name: 'MainComp',
@@ -202,7 +228,10 @@ export default {
     AlertsComp,
     Alerts2Comp,
     Alerts3Comp,
-    BreadcrumbsComp
+    BreadcrumbsComp,
+    ChipsComp2,
+    DividersComp,
+    ExpansionPanelsComp
   }
   
 }
