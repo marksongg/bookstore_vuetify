@@ -156,7 +156,7 @@
             </v-row>
 
             <v-row>
-              <v-col cols="12">
+              <v-col cols="8">
                 <v-sheet class="pa-2 ma-2">
                   <ExpansionPanelsComp/>
                 </v-sheet>
