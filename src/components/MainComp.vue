@@ -163,6 +163,14 @@
               </v-col>
             </v-row>
 
+            <v-row>
+              <v-col cols="12">
+                <v-sheet class="pa-2 ma-2">
+                  <CarouselsComp/>
+                </v-sheet>
+              </v-col>
+            </v-row>
+
 
           </v-container>
           
@@ -204,6 +212,7 @@ import BreadcrumbsComp from '@/components/BreadcrumbsComp.vue';
 import ChipsComp2 from '@/components/ChipsComp2.vue';
 import DividersComp from '@/components/DividersComp.vue';
 import ExpansionPanelsComp from '@/components/ExpansionPanelsComp.vue';
+import CarouselsComp from '@/components/CarouselsComp.vue'
 
 export default {
   name: 'MainComp',
@@ -231,7 +240,8 @@ export default {
     BreadcrumbsComp,
     ChipsComp2,
     DividersComp,
-    ExpansionPanelsComp
+    ExpansionPanelsComp,
+    CarouselsComp,
   }
   
 }
